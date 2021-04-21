@@ -26,4 +26,12 @@ class Tags extends Model
      */
     public $rules = [
     ];
+
+    public $belongsToMany = [
+        'posts' => [
+            'Ihorr\Blog\Models\Posts',
+            'table' => 'ihorr_blog_posts_tags'
+        ]
+
+    ];
 }

@@ -27,3 +27,6 @@
 1.0.10:
     - 'Updated table ihorr_blog_tag'
     - builder_table_update_ihorr_blog_tags.php
+1.0.11:
+    - 'Created table ihorr_blog_posts_tags'
+    - builder_table_create_ihorr_blog_posts_tags.php

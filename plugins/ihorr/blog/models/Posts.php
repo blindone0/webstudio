@@ -21,7 +21,10 @@ class Posts extends Model
     public $rules = [
     ];
 
-    public $morphToMany = [
-        'tags' => ['Ihorr\Blog\Models\Tags', 'name' => 'ihorr_blog_tag']
+    public $belongsToMany = [
+        'tags' => [
+            'Ihorr\Blog\Models\Tags',
+            'table' => 'ihorr_blog_posts_tags'
+        ]
     ];
 }
