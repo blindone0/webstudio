@@ -1,0 +1,12 @@
+fields:
+    url:
+        label: 'External Link'
+        span: full
+        type: text
+    img:
+        label: Screenshot
+        mode: image
+        imageWidth: '200'
+        imageHeight: '200'
+        span: auto
+        type: mediafinder

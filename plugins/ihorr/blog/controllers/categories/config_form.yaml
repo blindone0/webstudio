@@ -1,0 +1,10 @@
+name: Categories
+form: $/ihorr/blog/models/categories/fields.yaml
+modelClass: Ihorr\Blog\Models\Categories
+defaultRedirect: ihorr/blog/categories
+create:
+    redirect: 'ihorr/blog/categories/update/:id'
+    redirectClose: ihorr/blog/categories
+update:
+    redirect: ihorr/blog/categories
+    redirectClose: ihorr/blog/categories

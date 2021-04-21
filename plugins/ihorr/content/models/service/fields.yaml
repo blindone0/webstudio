@@ -1,0 +1,16 @@
+fields:
+    title:
+        label: Title
+        span: full
+        type: text
+    desc:
+        label: 'Service Description'
+        span: full
+        type: text
+    img:
+        label: 'Image for service'
+        mode: image
+        imageWidth: '200'
+        imageHeight: '200'
+        span: full
+        type: mediafinder

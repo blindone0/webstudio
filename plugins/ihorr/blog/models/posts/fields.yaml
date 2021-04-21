@@ -1,0 +1,16 @@
+fields:
+    title:
+        label: Title
+        span: full
+        type: text
+    content:
+        label: 'Blog body'
+        size: ''
+        span: full
+        type: richeditor
+    tags:
+        label: Tags
+        nameFrom: tag
+        descriptionFrom: description
+        span: auto
+        type: relation

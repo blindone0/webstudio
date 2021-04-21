@@ -1,0 +1,10 @@
+name: Tags
+form: $/ihorr/blog/models/tags/fields.yaml
+modelClass: Ihorr\Blog\Models\Tags
+defaultRedirect: ihorr/blog/tags
+create:
+    redirect: 'ihorr/blog/tags/update/:id'
+    redirectClose: ihorr/blog/tags
+update:
+    redirect: ihorr/blog/tags
+    redirectClose: ihorr/blog/tags

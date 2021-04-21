@@ -1,0 +1,10 @@
+name: Works
+form: $/ihorr/content/models/work/fields.yaml
+modelClass: Ihorr\Content\Models\Work
+defaultRedirect: ihorr/content/works
+create:
+    redirect: 'ihorr/content/works/update/:id'
+    redirectClose: ihorr/content/works
+update:
+    redirect: ihorr/content/works
+    redirectClose: ihorr/content/works

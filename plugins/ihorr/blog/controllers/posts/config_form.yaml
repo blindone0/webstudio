@@ -1,0 +1,10 @@
+name: Posts
+form: $/ihorr/blog/models/posts/fields.yaml
+modelClass: Ihorr\Blog\Models\Posts
+defaultRedirect: ihorr/blog/posts
+create:
+    redirect: 'ihorr/blog/posts/update/:id'
+    redirectClose: ihorr/blog/posts
+update:
+    redirect: ihorr/blog/posts
+    redirectClose: ihorr/blog/posts

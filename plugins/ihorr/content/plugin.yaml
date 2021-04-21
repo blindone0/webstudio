@@ -1,0 +1,20 @@
+plugin:
+    name: 'ihorr.content::lang.plugin.name'
+    description: 'ihorr.content::lang.plugin.description'
+    author: ihorr
+    icon: oc-icon-align-left
+    homepage: ''
+navigation:
+    main-menu-item-content:
+        label: Content
+        url: ihorr/content/services
+        icon: icon-align-left
+        sideMenu:
+            side-menu-item-content-services:
+                label: Services
+                url: ihorr/content/services
+                icon: icon-soundcloud
+            side-menu-item:
+                label: Portfolio
+                url: ihorr/content/works
+                icon: icon-sitemap

@@ -1,0 +1,5 @@
+fields:
+    tag:
+        label: tag
+        span: full
+        type: text

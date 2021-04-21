@@ -1,0 +1,24 @@
+plugin:
+    name: 'ihorr.blog::lang.plugin.name'
+    description: 'ihorr.blog::lang.plugin.description'
+    author: ihorr
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-blog:
+        label: Blog
+        url: ihorr/blog/posts
+        icon: icon-life-ring
+        sideMenu:
+            side-menu-tags:
+                label: Tags
+                url: ihorr/blog/tags
+                icon: icon-sliders
+            side-menu-categories:
+                label: Categories
+                url: ihorr/blog/categories
+                icon: icon-sitemap
+            side-menu-posts:
+                label: Posts
+                url: ihorr/blog/posts
+                icon: icon-sort-up

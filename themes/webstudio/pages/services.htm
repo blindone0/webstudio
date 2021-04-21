@@ -1,0 +1,40 @@
+title = "services"
+url = "/services"
+layout = "default"
+is_hidden = 0
+
+[contentLook]
+==
+<?php
+function onStart()
+{
+  $this['services'] = $this['contentLook']->getAllServices();
+
+}
+?>
+==
+{##}
+<section>
+      <div class="title">
+        <h1>Services that we can help you with</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+          iusto molestias accusamus rem nobis est, et laborum harum doloremque
+          nemo non, minima quos totam labore maxime iste alias ut esse? Repellat
+          eaque reiciendis laboriosam corporis fuga vero ratione veritatis
+          numquam, libero magni voluptatum omnis molestiae officiis
+          exercitationem qui quidem nam.
+        </p>
+      </div>
+      {% for service in services %}
+      <div class="services">
+        <div class="service">
+          <div class="icon">
+            <img src="{{ service.img|media }}" alt="" />
+          </div>
+          <h2>{{ service.title }}</h2>
+              {{ service.desc }}
+        </div>
+      {% endfor %}
+      </div>
+    </section>

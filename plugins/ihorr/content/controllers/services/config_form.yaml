@@ -1,0 +1,10 @@
+name: Services
+form: $/ihorr/content/models/service/fields.yaml
+modelClass: Ihorr\Content\Models\Service
+defaultRedirect: ihorr/content/services
+create:
+    redirect: 'ihorr/content/services/update/:id'
+    redirectClose: ihorr/content/services
+update:
+    redirect: ihorr/content/services
+    redirectClose: ihorr/content/services

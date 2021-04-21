@@ -1,0 +1,29 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table ihorr_blog_categories'
+    - builder_table_create_ihorr_blog_categories.php
+1.0.3:
+    - 'Created table ihorr_blog_posts'
+    - builder_table_create_ihorr_blog_posts.php
+1.0.4:
+    - 'Updated table ihorr_blog_posts'
+    - builder_table_update_ihorr_blog_posts.php
+1.0.5:
+    - 'Created table ihorr_blog_tags'
+    - builder_table_create_ihorr_blog_tags.php
+1.0.6:
+    - 'Created table ihorr_blog_posts2tags'
+    - builder_table_create_ihorr_blog_posts2tags.php
+1.0.7:
+    - 'Updated table ihorr_blog_posts2tags'
+    - builder_table_update_ihorr_blog_categorie_tag.php
+1.0.8:
+    - 'Updated table ihorr_blog_categorie_tag'
+    - builder_table_update_ihorr_blog_categories_tags.php
+1.0.9:
+    - 'Updated table ihorr_blog_tags'
+    - builder_table_update_ihorr_blog_tag.php
+1.0.10:
+    - 'Updated table ihorr_blog_tag'
+    - builder_table_update_ihorr_blog_tags.php
