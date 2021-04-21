@@ -188,7 +188,27 @@ section.home {
   color: var(--secondary-color);
 }
 
-.services .service .icon img {
+/* Blog PAGE */
+.blogs {
+
+  display: grid;
+  gap: 40px;
+  text-align: center;
+}
+
+
+.blogs .blog:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.blogs .blog h2 {
+  font-size: 24px;
+  font-weight: 500;
+
+  color: var(--secondary-color);
+}
+
+.blogs .blog .icon img {
   max-width: 100px;
 }
 

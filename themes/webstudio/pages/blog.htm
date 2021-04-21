@@ -1,0 +1,33 @@
+title = "blog"
+url = "/blog"
+layout = "default"
+is_hidden = 0
+
+[blogLook]
+==
+
+<?php
+function onStart()
+{
+  $this['blogs'] = $this['blogLook']->getAllServices();
+
+}
+?>
+
+==
+{##}
+<section>
+      <div class="title">
+        <h1>Blog</h1>
+      </div>
+      {% for post in blogs %}
+      <div class="blogs">
+        <div class="blog">
+          <div class="icon">
+            <img src="{{ post.img|media }}" alt="" />
+          </div>
+          <h2>{{ post.title }}</h2>
+        </div>
+      {% endfor %}
+      </div>
+    </section>
