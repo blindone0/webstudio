@@ -12,6 +12,7 @@ use Ihorr\Blog\Models\Posts as PostModel;
     function onStart(){
         
         $this['post'] = $this['blogPost']->getPost()->toArray(); 
+        dd($this['post']);
 
     }
 ?>
@@ -32,7 +33,8 @@ use Ihorr\Blog\Models\Posts as PostModel;
         </div>
       </div>
     </section>
-    <section id="comments">
+  
+<section id="comments">
     <ul>
     {% if post.comment %}
       {% for comment in post.comment%}
@@ -41,6 +43,7 @@ use Ihorr\Blog\Models\Posts as PostModel;
     {% endif %}
     </ul>
     </section>
+
   <section id="add-comment">
     {{ form_open({ url: '/send/commentpost' }) }}
       <input type="text" name="author">

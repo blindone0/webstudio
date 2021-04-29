@@ -29,9 +29,12 @@ class BlogPost extends ComponentBase
     public function getPost()
     {
         $post_id = $this->property('post_id');
-        $post = PostModel::with(['tags', 'comment'])->whereId($post_id)->first();
+        $post = PostModel::with(['tags','comment'])->whereId($post_id)->first();
+
         return $post;
     }
+
+
 
     public function createComment()
     {
@@ -49,8 +52,6 @@ class BlogPost extends ComponentBase
 
             $model->save();
         }
-
-
 
     }
 }

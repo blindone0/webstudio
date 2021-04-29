@@ -2,7 +2,7 @@
 
     Route::post(
         'send/commentpost',
-        array(
-            'uses' => 'Ihorr\Blog\Components\BlogPost@createComment'
-        )
+            array(
+                'uses' => 'Ihorr\Blog\Components\BlogPost@createComment'
+            )
     );
