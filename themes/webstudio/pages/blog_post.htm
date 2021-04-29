@@ -11,8 +11,7 @@ use Ihorr\Blog\Models\Posts as PostModel;
 
     function onStart(){
         
-        $this['post'] = $this['blogPost']->getPost(); 
-
+        $this['post'] = $this['blogPost']->getPost()->toArray(); 
 
     }
 ?>
@@ -33,3 +32,20 @@ use Ihorr\Blog\Models\Posts as PostModel;
         </div>
       </div>
     </section>
+    <section id="comments">
+    <ul>
+    {% if post.comment %}
+      {% for comment in post.comment%}
+      <li> {{ comment.author }} - {{ comment.text }}</li>
+      {% endfor %}
+    {% endif %}
+    </ul>
+    </section>
+  <section id="add-comment">
+    {{ form_open({ url: '/send/commentpost' }) }}
+      <input type="text" name="author">
+      <input type="text" name="text">
+      <input type="hidden" name="post_id" value="{{ post.id }}">
+      <button type="submit">Отправить</button>
+    {{ form_close }}
+  </section>

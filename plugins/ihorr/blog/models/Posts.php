@@ -31,4 +31,11 @@ class Posts extends Model
             'table' => 'ihorr_blog_posts_categories'
         ]
     ];
+
+    public $hasMany = [
+        'comment' => [
+            'Ihorr\Blog\Models\Comment',
+            'key' => 'post_id'
+        ]
+    ];
 }

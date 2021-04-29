@@ -2,6 +2,8 @@
 
 use Cms\Classes\ComponentBase;
 use Ihorr\Blog\Models\Posts as PostModel;
+use Ihorr\Blog\Models\Comment as CommentModel;
+use Input;
 
 class BlogPost extends ComponentBase
 {
@@ -27,7 +29,28 @@ class BlogPost extends ComponentBase
     public function getPost()
     {
         $post_id = $this->property('post_id');
-        $post = PostModel::with(['tags'])->whereId($post_id)->first();
+        $post = PostModel::with(['tags', 'comment'])->whereId($post_id)->first();
         return $post;
+    }
+
+    public function createComment()
+    {
+        $vars = Input::all();
+
+        if ($vars) {
+
+            $model = new CommentModel;
+
+            $model->author = $vars['author'];
+
+            $model->text = $vars['text'];
+
+            $model->post_id = $vars['post_id'];
+
+            $model->save();
+        }
+
+
+
     }
 }

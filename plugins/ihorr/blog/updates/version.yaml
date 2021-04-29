@@ -39,3 +39,12 @@
 1.0.14:
     - 'Updated table ihorr_blog_categories'
     - builder_table_update_ihorr_blog_categories_2.php
+1.0.15:
+    - 'Create Blog Comments'
+    - create_comments_table.php
+1.0.16:
+    - 'Updated table ihorr_blog_comments'
+    - builder_table_update_ihorr_blog_comments.php
+1.0.17:
+    - 'Updated table ihorr_blog_comments'
+    - builder_table_update_ihorr_blog_comments_2.php
