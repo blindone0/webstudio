@@ -1,44 +1,35 @@
-title = "blog"
-url = "/blog"
+title = "blog_by_categorie"
+url = "/blogbycat/:categorie_id/"
 layout = "default"
 is_hidden = 0
 
-[TagsLook]
-[blogLook]
 [CategoriesLook]
-==
 
+[blogLook]
+==
 <?php
 function onStart()
 {
-  $this['tags'] = $this['TagsLook']->getAllTags();
-  $this['blogs'] = $this['blogLook']->getAllServices();
-  $this['categories'] = $this['CategoriesLook']->getAllCategories();
-
+    $this['categories'] = $this['CategoriesLook']->getAllCategories();
+  $this['cat_posts'] = $this['blogLook']->getAllPostsByCategorie();
+  //dd($this['cat_posts']);
 }
 ?>
-
 ==
 {##}
 <section>
       <div class="title">
         <h1>Blog</h1>
       </div>
-      <div>
         <div class="categories">
           {% for cat in categories %}
               
               <a class="categorie" href="{{ 'blog_by_categorie'|page({ categorie_id: cat.id  }) }}">{{ cat.name }}</a>
           {% endfor %}
+        </div>
         <hr>
-      </div>
-        <div class="tags">
-          {% for tag in tags %}
-              <a class="tag" href="{{ 'blog_by_tag'|page({ tag_id: tag.id  }) }}">{{ tag.tag }}</a>
-          {% endfor %}
-        <hr>
-      </div>
-      {% for post in blogs %}
+        <br>
+      {% for post in cat_posts %}
       <div class="blogs">
         <div class="blog">
           <a href="{{ 'blog_post'|page({ post_id: post.id  }) }}">{{ post.title }}</a>

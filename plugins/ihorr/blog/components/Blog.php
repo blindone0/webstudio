@@ -1,7 +1,7 @@
 <?php namespace Ihorr\Blog\Components;
 
 use Cms\Classes\ComponentBase;
-use Ihorr\Blog\Models\Posts as PostsModel;
+use Ihorr\Blog\Models\Posts as PostModel;
 
 class Blog extends ComponentBase
 {
@@ -20,8 +20,17 @@ class Blog extends ComponentBase
     
     public function getAllServices()
     {
-        $posts = PostsModel::all();//collection ()
+        $posts = PostModel::all();//collection ()
 
         return $posts->toArray();
+    }
+
+    public function getAllPostsByCategorie()
+    {
+        $cat_id = $this->property('categorie_id');
+     
+        $posts_by_cat = PostModel::with(['tags', 'categories'])->whereId($cat_id)->get();
+        
+        return $posts_by_cat;
     }
 }

@@ -30,3 +30,12 @@
 1.0.11:
     - 'Created table ihorr_blog_posts_tags'
     - builder_table_create_ihorr_blog_posts_tags.php
+1.0.12:
+    - 'Created table ihorr_blog_posts_categories'
+    - builder_table_create_ihorr_blog_posts_categories.php
+1.0.13:
+    - 'Updated table ihorr_blog_categories'
+    - builder_table_update_ihorr_blog_categories.php
+1.0.14:
+    - 'Updated table ihorr_blog_categories'
+    - builder_table_update_ihorr_blog_categories_2.php

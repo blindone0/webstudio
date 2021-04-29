@@ -192,7 +192,6 @@ section.home {
 .blogs {
 
   display: grid;
-  gap: 40px;
   text-align: center;
 }
 
@@ -256,6 +255,30 @@ section.home {
   text-decoration: none;
   border: 1px solid #fff;
   padding: 5px 15px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-style: solid;
+  border-color: #1e65ce;
+}
+
+.tag {
+  margin: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-style: solid;
+  border-color: #f60f20;
+}
+
+.categorie {
+  margin: 10px;
 }
 
 /* CONTACT */

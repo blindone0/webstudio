@@ -20,4 +20,12 @@ class Service extends Model
      */
     public $rules = [
     ];
+
+    public $belongsToMany = [
+        'tags' => [
+            'Ihorr\Blog\Models\Tags',
+            'table' => 'ihorr_content_services_tags'
+        ]
+
+    ];
 }

@@ -25,6 +25,10 @@ class Posts extends Model
         'tags' => [
             'Ihorr\Blog\Models\Tags',
             'table' => 'ihorr_blog_posts_tags'
+        ],
+        'categories' => [
+            'Ihorr\Blog\Models\Categories',
+            'table' => 'ihorr_blog_posts_categories'
         ]
     ];
 }

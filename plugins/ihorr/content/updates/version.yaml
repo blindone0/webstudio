@@ -6,3 +6,9 @@
 1.0.3:
     - 'Created table ihorr_content_works'
     - builder_table_create_ihorr_content_works.php
+1.0.4:
+    - 'Created table ihorr_content_services_tags'
+    - builder_table_create_ihorr_content_services_tags.php
+1.0.5:
+    - 'Updated table ihorr_content_services_tags'
+    - builder_table_update_ihorr_content_services_tags.php

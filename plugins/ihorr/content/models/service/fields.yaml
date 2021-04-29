@@ -14,3 +14,10 @@ fields:
         imageHeight: '200'
         span: full
         type: mediafinder
+    tags:
+        label: Relation
+        nameFrom: tag
+        descriptionFrom: Tag
+        span: auto
+        type: relation
+

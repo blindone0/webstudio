@@ -1,5 +1,5 @@
 fields:
     name:
-        label: Name
-        span: full
+        label: 'Categorie name'
+        span: auto
         type: text

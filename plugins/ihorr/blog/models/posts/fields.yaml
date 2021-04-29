@@ -14,3 +14,9 @@ fields:
         descriptionFrom: description
         span: auto
         type: relation
+    categories:
+        label: categories
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation

@@ -1,0 +1,35 @@
+title = "blog_post"
+url = "/blog/:post_id"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+post_id = "{{ :post_id }}"
+==
+<?php
+use Ihorr\Blog\Models\Posts as PostModel;
+
+    function onStart(){
+        
+        $this['post'] = $this['blogPost']->getPost(); 
+
+
+    }
+?>
+==
+{##}
+
+<section>
+      <div class="title">
+        <h1>{{ post.title }}</h1>
+      </div>
+
+      
+
+      <div class="blogs">
+        <div class="blog">
+          {{ post.content|raw }}
+          
+        </div>
+      </div>
+    </section>
