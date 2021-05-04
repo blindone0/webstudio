@@ -15,6 +15,10 @@ class Posts extends Model
      */
     public $table = 'ihorr_blog_posts';
 
+    public $guarded = [
+        'id'
+    ];
+
     /**
      * @var array Validation rules
      */

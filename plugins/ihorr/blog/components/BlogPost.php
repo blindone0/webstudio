@@ -29,7 +29,14 @@ class BlogPost extends ComponentBase
     public function getPost()
     {
         $post_id = $this->property('post_id');
-        $post = PostModel::with(['tags','comment'])->whereId($post_id)->first();
+        $post = PostModel::with(['tags','comment'])->whereId($post_id)->firstOrCreate(
+            ['id' => $post_id],
+            [
+                'title' => 'Новый тайтл',
+                'content' => 'Какой-то текст'
+            
+            ]
+            );
 
         return $post;
     }
