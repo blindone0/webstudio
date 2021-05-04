@@ -11,8 +11,8 @@ use Ihorr\Blog\Models\Posts as PostModel;
 
     function onStart(){
         
-        $this['post'] = $this['blogPost']->getPost()->toArray(); 
-        dd($this['post']);
+        $this['post'] = $this['blogPost']->getPost(); 
+        
 
     }
 ?>

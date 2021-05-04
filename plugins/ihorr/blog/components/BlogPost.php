@@ -34,6 +34,12 @@ class BlogPost extends ComponentBase
         return $post;
     }
 
+    public function getAllPosts()
+    {
+        $posts = PostModel::all();
+
+        return response()->json($posts);
+    }
 
 
     public function createComment()

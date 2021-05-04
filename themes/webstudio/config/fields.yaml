@@ -1,0 +1,10 @@
+fields:
+    main_text_h1:
+        label: 'Большой текст на главной странице'
+        span: auto
+        type: text
+    main_page_fulltext:
+        label: 'Большой текст на главной'
+        size: large
+        span: full
+        type: richeditor

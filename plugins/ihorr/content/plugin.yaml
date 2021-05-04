@@ -18,3 +18,7 @@ navigation:
                 label: Portfolio
                 url: ihorr/content/works
                 icon: icon-sitemap
+    main-menu-item:
+        label: Тема
+        url: cms/themeoptions/update/webstudio
+        icon: icon-life-ring

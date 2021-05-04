@@ -3,3 +3,4 @@ description: 'My chillout webstudio'
 author: ihorr
 homepage: ''
 code: ''
+form: ~/plugins/ihorr/content/models/config/fields.yaml
